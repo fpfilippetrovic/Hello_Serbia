@@ -8,8 +8,18 @@ public class Hello {
 
         if (broj == 3) {
             System.out.println("Pozdrav Srbiji i njenim stanovnicima!");
-        } else {
-            System.out.println("Molimo Vas unesit broj 3!");
+        } else if (broj != 3){
+            System.out.println("Netacan unos, sledeci put unesite broj 3!");
+        }
+
+        System.out.println("Po narodnoj krilatici, sta Srbina spasava?");
+        String odgovor = scanner.next();
+        String odgovor1 = "sloga";
+
+        if (odgovor == odgovor1) {
+            System.out.println("Cestitamo, Vi ste pravi Srbin!");
+        } else if (odgovor != odgovor1) {
+            System.out.println("Netacan odgovor!");
         }
     }
 }
